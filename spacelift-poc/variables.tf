@@ -1,9 +1,12 @@
-terraform {
-  required_version = ">= 1.5.0"
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
+variable "region" {
+  default = "ap-south-1"   # ← Mumbai
+}
+
+variable "environment" {
+  default = "poc"
+}
+
+variable "bucket_name" {
+  type    = string
+  default = "spacelift-poc-anuj-bucket-2024"
 }
