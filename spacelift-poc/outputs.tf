@@ -3,5 +3,5 @@ output "bucket_name" {
 }
 
 output "instance_id" {
-  value = aws_instance.poc_instance.id
+  value = aws_instance.demo.id
 }
